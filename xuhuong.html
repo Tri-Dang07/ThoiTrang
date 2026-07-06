@@ -9,22 +9,15 @@
         body { background-color: #fcfbf7; color: #222; line-height: 1.6; }
         header { background-color: #ffffff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 1000; }
         .header-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
-        .logo { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #111; text-transform: uppercase; text-decoration: none; }
+        .logo { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #111; text-transform: uppercase; }
         nav a { text-decoration: none; color: #555; margin-left: 20px; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
-        nav a:hover { color: #b1895a; }
-        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        .section-title { font-size: 22px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; border-left: 3px solid #b1895a; padding-left: 10px; }
-        .featured-post { background: #fff; border: 1px solid #eaeaea; margin-bottom: 40px; border-radius: 4px; overflow: hidden; }
-        .featured-post img { width: 100%; height: auto; max-height: 500px; object-fit: cover; display: block; }
-        .post-content { padding: 25px; }
-        .post-content h3 { font-size: 24px; margin-bottom: 15px; }
-        .post-content p { color: #555; margin-bottom: 15px; }
-        .more-links { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eaeaea; }
-        .more-links h4 { font-size: 18px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
-        .more-links ul { list-style: none; }
-        .more-links li { margin-bottom: 10px; }
-        .more-links a { color: #b1895a; text-decoration: none; font-weight: 500; }
-        .more-links a:hover { text-decoration: underline; }
+        nav a:hover, nav a.active { color: #b1895a; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .trend-post { background: #fff; border: 1px solid #eaeaea; border-radius: 4px; padding: 30px; margin-bottom: 40px; }
+        .trend-meta { font-size: 13px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .trend-post h2 { font-size: 24px; margin-bottom: 15px; color: #111; }
+        .trend-post img { width: 100%; height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px; }
+        .trend-post p { color: #444; margin-bottom: 15px; text-align: justify; }
         footer { background-color: #111; color: #888; text-align: center; padding: 30px 20px; font-size: 13px; margin-top: 60px; }
         footer a { color: #ccc; text-decoration: none; }
     </style>
@@ -33,12 +26,12 @@
 
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo">LỤA & CHỈ</a>
+            <div class="logo">LỤA & CHỈ</div>
             <nav>
                 <a href="index.html">Trang Chủ</a>
                 <a href="danhmuc-nam.html">Thời Trang Nam</a>
                 <a href="danhmuc-nu.html">Thời Trang Nữ</a>
-                <a href="xuhuong.html" style="color: #b1895a;">Xu Hướng</a>
+                <a href="xuhuong.html" class="active">Xu Hướng</a>
                 <a href="dangnhap.html">Đăng Nhập</a>
                 <a href="sitemap.html">Sơ Đồ</a>
             </nav>
@@ -46,24 +39,20 @@
     </header>
 
     <main class="container">
-        <h2 class="section-title">Xu Hướng Thời Trang Thu Đông 2026</h2>
-        
-        <section class="featured-post">
-            <!-- Giữ nguyên ảnh sào quần áo chất lượng cao của bạn -->
-            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=cover" alt="Xu hướng thời trang">
-            <div class="post-content">
-                <p>Năm nay, các thiết kế tôn vinh sự tối giản đầy tinh tế kết hợp cùng chất liệu giữ ấm sinh học đang là tiêu điểm lớn của ngành thời trang. Sự trỗi dậy của phong cách sống dịch chuyển đòi hỏi các bộ đồ không chỉ đẹp lúc đứng trên sàn diễn mà còn phải cực kỳ linh hoạt, thoải mái khi diện hằng ngày.</p>
-                <p>Đặc biệt, các tone màu trầm ấm nguyên bản như nâu đất, be sáng và xanh rêu được phối theo phong cách layer tạo nên chiều sâu cuốn hút khó cưỡng.</p>
-                
-                <div class="more-links">
-                    <h4>Gợi ý xem thêm liên quan</h4>
-                    <ul>
-                        <li><a href="danhmuc-nam.html">&rarr; Khám phá các mẫu áo khoác nỉ nam năng động phù hợp phối layer</a></li>
-                        <li><a href="danhmuc-nu.html">&rarr; BST Áo len cổ tròn phái nữ dạo phố cực thanh lịch</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <article class="trend-post">
+            <div class="trend-meta">Xu hướng tuần này / Editorial</div>
+            <h2>Sự Lên Ngôi Của Tinh Thần Quiet Luxury (Sự Sang Trọng Thầm Lặng)</h2>
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=cover" alt="Sàn diễn thời trang">
+            <p>Thời trang năm nay đang chứng kiến một cuộc chuyển giao mạnh mẽ hướng đến chủ nghĩa tối giản tinh khiết. Không còn những logo bản lớn hầm hố hay sắc màu neon chói lọi, giá trị cốt lõi giờ đây tập trung vào chất liệu lụa, cashmere tự nhiên và các đường may đo thủ công tinh sảo.</p>
+            <p>Màu sắc trung tính như kem, beige, xanh navy hay ghi xám làm chủ đạo giúp trang phục dễ dàng đồng hành cùng người mặc qua nhiều mùa mốt mà vẫn giữ nguyên độ thanh lịch nguyên bản.</p>
+        </article>
+
+        <article class="trend-post">
+            <div class="trend-meta">Phong cách sống / Streetstyle</div>
+            <h2>Thời Trang Bền Vững Đón Gió Thu Đông</h2>
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000&auto=format&fit=cover" alt="Street style">
+            <p>Sự kết hợp hoàn hảo giữa các chất liệu tái chế thân thiện với môi trường cùng phom dáng rộng (oversize) phóng khoáng tạo nên cơn sốt mới trong làng thời trang đường phố năm nay. Vừa ấm áp vừa cá tính là những gì giới mộ điệu đang tích cực lăng xê.</p>
+        </article>
     </main>
 
     <footer>
