@@ -6,27 +6,35 @@
     <title>Thời Trang Nam - LỤA & CHỈ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { background-color: #fcfbf7; color: #222; }
-        header { background-color: #ffffff; border-bottom: 1px solid #eaeaea; }
+        body { background-color: #fcfbf7; color: #222; line-height: 1.6; }
+        header { background-color: #ffffff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 1000; }
         .header-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
-        .logo { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #111; text-transform: uppercase; text-decoration: none; }
-        nav a { text-decoration: none; color: #555; margin-left: 20px; font-size: 14px; font-weight: 500; text-transform: uppercase; }
-        nav a:hover { color: #b1895a; }
+        .logo { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #111; text-transform: uppercase; }
+        nav a { text-decoration: none; color: #555; margin-left: 20px; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover, nav a.active { color: #b1895a; }
         .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        .section-title { font-size: 22px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; border-left: 3px solid #b1895a; padding-left: 10px; }
-        .main-img { width: 100%; height: 400px; object-fit: cover; border-radius: 4px; margin-bottom: 20px; }
-        .content { background: #fff; padding: 30px; border: 1px solid #eaeaea; border-radius: 4px; }
-        p { margin-bottom: 15px; color: #444; }
-        footer { background-color: #111; color: #888; text-align: center; padding: 20px; font-size: 13px; margin-top: 40px; }
+        .page-title { font-size: 26px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; text-align: center; color: #111; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: #fff; border: 1px solid #eaeaea; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
+        .card img { width: 100%; height: 350px; object-fit: cover; }
+        .card-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .card-content h4 { font-size: 18px; margin-bottom: 10px; color: #111; }
+        .card-content .price { color: #b1895a; font-weight: 600; margin-bottom: 10px; }
+        .card-content p { color: #666; font-size: 14px; margin-bottom: 15px; flex-grow: 1; }
+        .btn-action { display: block; text-align: center; padding: 10px; background-color: #111; color: #fff; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+        .btn-action:hover { background-color: #333; }
+        footer { background-color: #111; color: #888; text-align: center; padding: 30px 20px; font-size: 13px; margin-top: 60px; }
+        footer a { color: #ccc; text-decoration: none; }
     </style>
 </head>
 <body>
+
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo">LỤA & CHỈ</a>
+            <div class="logo">LỤA & CHỈ</div>
             <nav>
                 <a href="index.html">Trang Chủ</a>
-                <a href="danhmuc-nam.html" style="color: #b1895a;">Thời Trang Nam</a>
+                <a href="danhmuc-nam.html" class="active">Thời Trang Nam</a>
                 <a href="danhmuc-nu.html">Thời Trang Nữ</a>
                 <a href="xuhuong.html">Xu Hướng</a>
                 <a href="dangnhap.html">Đăng Nhập</a>
@@ -36,16 +44,43 @@
     </header>
 
     <main class="container">
-        <h2 class="section-title">Xu Hướng Thời Trang Nam 2026</h2>
-        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=600&auto=format&fit=cover" class="main-img" alt="Nam">
-        <div class="content">
-            <h3>Bộ sưu tập áo khoác nỉ năng động đón gió đầu mùa</h3>
-            <br>
-            <p>Phong cách nam giới năm nay hướng tới sự tối giản nhưng không kém phần thanh lịch. Chất liệu nỉ dày dặn, co giãn tốt mang lại sự ấm áp tuyệt đối.</p>
-            <p>Form dáng suông lịch lãm giúp các chàng trai dễ dàng phối đồ đi học, đi làm hay dạo phố cuối tuần.</p>
-        </div>
+        <h1 class="page-title">Thời Trang Nam</h1>
+        <section class="products-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=600&auto=format&fit=cover" alt="Áo khoác nỉ">
+                <div class="card-content">
+                    <h4>Áo Khoác Nỉ Lịch Lãm</h4>
+                    <p class="price">450.000 đ</p>
+                    <p>Chất liệu nỉ giữ ấm tối ưu, kiểu dáng tối giản tinh tế thích hợp cho những ngày chớm thu.</p>
+                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=600&auto=format&fit=cover" alt="Bộ Suit Nam">
+                <div class="card-content">
+                    <h4>Bộ Suit Xanh Navy Cao Cấp</h4>
+                    <p class="price">1.850.000 đ</p>
+                    <p>Đường may chuẩn mực ôm dáng hoàn hảo, mang lại phong thái quý ông tự tin cho mọi sự kiện.</p>
+                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=600&auto=format&fit=cover" alt="Áo Sơ Mi Trắng">
+                <div class="card-content">
+                    <h4>Áo Sơ Mi Premium Oxford</h4>
+                    <p class="price">380.000 đ</p>
+                    <p>Chất vải cotton mềm mịn, thoáng mát, giữ form dáng phẳng phiu suốt ngày dài làm việc.</p>
+                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer><p>&copy; 2026 LỤA & CHỈ.</p></footer>
+    <footer>
+        <p>&copy; 2026 LỤA & CHỈ. Thiết kế trang nhã dành cho bài thi Thực Hành Web. | <a href="sitemap.html">Xem Sơ Đồ Trang (Sitemap)</a></p>
+    </footer>
+
 </body>
 </html>
