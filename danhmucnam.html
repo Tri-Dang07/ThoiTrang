@@ -13,16 +13,15 @@
         nav a { text-decoration: none; color: #555; margin-left: 20px; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
         nav a:hover, nav a.active { color: #b1895a; }
         .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        .page-title { font-size: 26px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; text-align: center; color: #111; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .page-title { font-size: 22px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; border-left: 3px solid #b1895a; padding-left: 10px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
         .card { background: #fff; border: 1px solid #eaeaea; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
         .card img { width: 100%; height: 350px; object-fit: cover; }
         .card-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
         .card-content h4 { font-size: 18px; margin-bottom: 10px; color: #111; }
-        .card-content .price { color: #b1895a; font-weight: 600; margin-bottom: 10px; }
+        .card-content .price { color: #b1895a; font-weight: 600; margin-bottom: 15px; font-size: 16px; }
         .card-content p { color: #666; font-size: 14px; margin-bottom: 15px; flex-grow: 1; }
-        .btn-action { display: block; text-align: center; padding: 10px; background-color: #111; color: #fff; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
-        .btn-action:hover { background-color: #333; }
+        .read-more { color: #b1895a; text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
         footer { background-color: #111; color: #888; text-align: center; padding: 30px 20px; font-size: 13px; margin-top: 60px; }
         footer a { color: #ccc; text-decoration: none; }
     </style>
@@ -44,35 +43,35 @@
     </header>
 
     <main class="container">
-        <h1 class="page-title">Thời Trang Nam</h1>
+        <h2 class="page-title">Bộ Sưu Tập Thời Trang Nam</h2>
         <section class="products-grid">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=600&auto=format&fit=cover" alt="Áo khoác nỉ">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=600&auto=format&fit=cover" alt="Thời trang nam bộ suit">
                 <div class="card-content">
-                    <h4>Áo Khoác Nỉ Lịch Lãm</h4>
-                    <p class="price">450.000 đ</p>
-                    <p>Chất liệu nỉ giữ ấm tối ưu, kiểu dáng tối giản tinh tế thích hợp cho những ngày chớm thu.</p>
-                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                    <h4>Bộ Suit Classic Lịch Lãm</h4>
+                    <p class="price">1.550.000 đ</p>
+                    <p>Phong cách quý ông trưởng thành, chất liệu đứng form, chuẩn mực cho các buổi hội họp và sự kiện quan trọng.</p>
+                    <a href="#" class="read-more">Xem chi tiết &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=600&auto=format&fit=cover" alt="Bộ Suit Nam">
+                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=600&auto=format&fit=cover" alt="Áo khoác nam">
                 <div class="card-content">
-                    <h4>Bộ Suit Xanh Navy Cao Cấp</h4>
-                    <p class="price">1.850.000 đ</p>
-                    <p>Đường may chuẩn mực ôm dáng hoàn hảo, mang lại phong thái quý ông tự tin cho mọi sự kiện.</p>
-                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                    <h4>Áo Khoác Blazer Casual thanh lịch</h4>
+                    <p class="price">680.000 đ</p>
+                    <p>Kiểu dáng tối giản thời thượng, dễ phối cùng áo thun hoặc sơ mi, thích hợp đón những đợt gió đầu mùa.</p>
+                    <a href="#" class="read-more">Xem chi tiết &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=600&auto=format&fit=cover" alt="Áo Sơ Mi Trắng">
+                <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=600&auto=format&fit=cover" alt="Sơ mi nam">
                 <div class="card-content">
                     <h4>Áo Sơ Mi Premium Oxford</h4>
-                    <p class="price">380.000 đ</p>
-                    <p>Chất vải cotton mềm mịn, thoáng mát, giữ form dáng phẳng phiu suốt ngày dài làm việc.</p>
-                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                    <p class="price">350.000 đ</p>
+                    <p>Chất liệu sợi tự nhiên thoáng mát, thấm hút mồ hôi tốt và cực kỳ bền bỉ sau nhiều lần giặt.</p>
+                    <a href="#" class="read-more">Xem chi tiết &rarr;</a>
                 </div>
             </div>
         </section>
