@@ -13,16 +13,15 @@
         nav a { text-decoration: none; color: #555; margin-left: 20px; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
         nav a:hover, nav a.active { color: #b1895a; }
         .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        .page-title { font-size: 26px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; text-align: center; color: #111; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .page-title { font-size: 22px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; border-left: 3px solid #b1895a; padding-left: 10px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
         .card { background: #fff; border: 1px solid #eaeaea; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
         .card img { width: 100%; height: 350px; object-fit: cover; }
         .card-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
         .card-content h4 { font-size: 18px; margin-bottom: 10px; color: #111; }
-        .card-content .price { color: #b1895a; font-weight: 600; margin-bottom: 10px; }
+        .card-content .price { color: #b1895a; font-weight: 600; margin-bottom: 15px; font-size: 16px; }
         .card-content p { color: #666; font-size: 14px; margin-bottom: 15px; flex-grow: 1; }
-        .btn-action { display: block; text-align: center; padding: 10px; background-color: #111; color: #fff; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
-        .btn-action:hover { background-color: #333; }
+        .read-more { color: #b1895a; text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
         footer { background-color: #111; color: #888; text-align: center; padding: 30px 20px; font-size: 13px; margin-top: 60px; }
         footer a { color: #ccc; text-decoration: none; }
     </style>
@@ -44,35 +43,35 @@
     </header>
 
     <main class="container">
-        <h1 class="page-title">Thời Trang Nữ</h1>
+        <h2 class="page-title">Bộ Sưu Tập Thời Trang Nữ</h2>
         <section class="products-grid">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=600&auto=format&fit=cover" alt="Áo len thời trang">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=600&auto=format&fit=cover" alt="Thời trang nữ sành điệu">
                 <div class="card-content">
-                    <h4>Áo Len Cổ Tròn Thanh Lịch</h4>
-                    <p class="price">390.000 đ</p>
-                    <p>Sợi len dệt mềm mại co giãn tốt, gam màu thời thượng dễ phối hợp với đa dạng phong cách.</p>
-                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                    <h4>Áo Len Cổ Tròn / Áo Choàng Thu Đông</h4>
+                    <p class="price">490.000 đ</p>
+                    <p>Chất liệu nỉ len co giãn mềm mại, giữ dáng chuẩn, là món đồ không thể thiếu của các cô nàng sành điệu.</p>
+                    <a href="#" class="read-more">Xem chi tiết &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=600&auto=format&fit=cover" alt="Đầm dạ hội">
                 <div class="card-content">
-                    <h4>Đầm Dạ Hội Luxury Glamour</h4>
-                    <p class="price">2.450.000 đ</p>
-                    <p>Thiết kế tinh tế giúp tôn vinh trọn vẹn bờ vai và đường cong kiêu sa quyến rũ cho các bữa tiệc.</p>
-                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                    <h4>Đầm Dạ Hội Glamour sang trọng</h4>
+                    <p class="price">1.950.000 đ</p>
+                    <p>Đường cắt may tinh tế tôn vinh vóc dáng kiêu sa của phái đẹp trong các buổi tiệc tùng cuối năm.</p>
+                    <a href="#" class="read-more">Xem chi tiết &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?q=80&w=600&auto=format&fit=cover" alt="Set váy dạo phố">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&auto=format&fit=cover" alt="Váy dạo phố nữ">
                 <div class="card-content">
-                    <h4>Chân Váy Xếp Ly Classic</h4>
-                    <p class="price">320.000 đ</p>
-                    <p>Chất liệu cao cấp không nhăn, độ rủ tự nhiên tạo bước đi uyển chuyển nhẹ nhàng khi dạo phố.</p>
-                    <a href="#" class="btn-action">Xem Chi Tiết</a>
+                    <h4>Váy Voan Tơ Xu Hướng Mới</h4>
+                    <p class="price">520.000 đ</p>
+                    <p>Thiết kế bồng bềnh nhẹ nhàng mang đậm tinh thần tự do, lãng mạn cho những ngày xuống phố.</p>
+                    <a href="#" class="read-more">Xem chi tiết &rarr;</a>
                 </div>
             </div>
         </section>
