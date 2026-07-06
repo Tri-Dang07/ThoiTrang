@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - LỤA & CHỈ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #fcfbf7; color: #222; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background-color: #ffffff; border-bottom: 1px solid #eaeaea; }
+        .header-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; width: 100%; }
+        .logo { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #111; text-transform: uppercase; text-decoration: none; }
+        nav a { text-decoration: none; color: #555; margin-left: 20px; font-size: 14px; font-weight: 500; text-transform: uppercase; }
+        nav a:hover { color: #b1895a; }
+        .login-container { max-width: 400px; margin: 80px auto; padding: 30px; background: #fff; border: 1px solid #eaeaea; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); width: 100%; }
+        h2 { text-align: center; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; font-size: 22px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; font-size: 14px; color: #555; }
+        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+        input:focus { border-color: #b1895a; outline: none; }
+        .btn-submit { width: 100%; padding: 12px; background: #111; color: #fff; border: none; border-radius: 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; margin-top: 10px; }
+        .btn-submit:hover { background: #b1895a; }
+        footer { background-color: #111; color: #888; text-align: center; padding: 20px; font-size: 13px; margin-top: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">LỤA & CHỈ</a>
+            <nav>
+                <a href="index.html">Trang Chủ</a>
+                <a href="danhmuc-nam.html">Thời Trang Nam</a>
+                <a href="danhmuc-nu.html">Thời Trang Nữ</a>
+                <a href="xuhuong.html">Xu Hướng</a>
+                <a href="dangnhap.html" style="color: #b1895a;">Đăng Nhập</a>
+                <a href="sitemap.html">Sơ Đồ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h2>Đăng Nhập Hệ Thống</h2>
+        <form onsubmit="alert('Đăng nhập thành công!'); return false;">
+            <div class="form-group">
+                <label>Tên đăng nhập hoặc Email</label>
+                <input type="text" required placeholder="Nhập email của bạn...">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu</label>
+                <input type="password" required placeholder="Nhập mật khẩu...">
+            </div>
+            <button type="submit" class="btn-submit">Đăng Nhập</button>
+        </form>
+    </div>
+
+    <footer><p>&copy; 2026 LỤA & CHỈ.</p></footer>
+</body>
+</html>
