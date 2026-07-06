@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LỤA & CHỈ - Tạp Chí Thời Trang</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #fcfbf7; color: #222; line-height: 1.6; }
+        header { background-color: #ffffff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 1000; }
+        .header-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 24px; font-weight: 700; letter-spacing: 2px; color: #111; text-transform: uppercase; }
+        nav a { text-decoration: none; color: #555; margin-left: 20px; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { color: #b1895a; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .hero-section { text-align: center; margin-bottom: 50px; padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+        .hero-section h1 { font-size: 34px; margin-bottom: 15px; font-weight: 600; color: #111; }
+        .hero-section p { color: #666; font-style: italic; margin-bottom: 20px; }
+        .btn-discover { display: inline-block; padding: 10px 25px; background-color: #111; color: #fff; text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+        .section-title { font-size: 22px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; border-left: 3px solid #b1895a; padding-left: 10px; }
+        .featured-post { background: #fff; border: 1px solid #eaeaea; margin-bottom: 40px; border-radius: 4px; overflow: hidden; }
+        .featured-post img { width: 100%; height: auto; max-height: 500px; object-fit: cover; display: block; }
+        .post-content { padding: 25px; }
+        .post-content h3 { font-size: 24px; margin-bottom: 10px; }
+        .post-content p { color: #555; margin-bottom: 15px; }
+        .posts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .card { background: #fff; border: 1px solid #eaeaea; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .card-content h4 { font-size: 18px; margin-bottom: 10px; }
+        .card-content p { color: #666; font-size: 14px; margin-bottom: 15px; flex-grow: 1; }
+        .read-more { color: #b1895a; text-decoration: none; font-size: 14px; font-weight: 600; }
+        footer { background-color: #111; color: #888; text-align: center; padding: 30px 20px; font-size: 13px; margin-top: 60px; }
+        footer a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">LỤA & CHỈ</div>
+            <nav>
+                <a href="index.html">Trang Chủ</a>
+                <a href="danhmuc-nam.html">Thời Trang Nam</a>
+                <a href="danhmuc-nu.html">Thời Trang Nữ</a>
+                <a href="xuhuong.html">Xu Hướng</a>
+                <a href="dangnhap.html">Đăng Nhập</a>
+                <a href="sitemap.html">Sơ Đồ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1>Câu chuyện mặc lên người, kể bằng đường chỉ may.</h1>
+            <p>Lụa & Chỉ là tạp chí thời trang trực tuyến cập nhật xu hướng, phong cách và những góc nhìn mới về thời trang nam nữ mỗi tuần.</p>
+            <a href="xuhuong.html" class="btn-discover">Khám Phá Bộ Sưu Tập</a>
+        </section>
+
+        <h2 class="section-title">Tin Nóng Hôm Nay / Chủ Đề Hot Nhất</h2>
+        <section class="featured-post">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=cover" alt="Thời trang mùa thu đông">
+            <div class="post-content">
+                <h3>5 kiểu đầm dạ hội thống trị mùa Thu Đông</h3>
+                <p>Những thiết kế tối giản quyến rũ được yêu thích nhất thời gian gần đây, giúp tôn lên vóc dáng kiêu sa của phái đẹp trong các buổi tiệc cuối năm...</p>
+                <a href="xuhuong.html" class="read-more">Xem chi tiết &rarr;</a>
+            </div>
+        </section>
+
+        <h2 class="section-title">Xu Hướng Thời Trang</h2>
+        <section class="posts-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=600&auto=format&fit=cover" alt="Thời trang nam">
+                <div class="card-content">
+                    <h4>Bộ sưu tập áo khoác nỉ năng động đón gió đầu mùa</h4>
+                    <p>Phong cách trẻ trung, giữ ấm tối ưu cho những ngày lạnh sắp tới với chất liệu bền bỉ, kiểu dáng tối giản lịch lãm cho nam giới.</p>
+                    <a href="danhmuc-nam.html" class="read-more">Xem ngay &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=600&auto=format&fit=cover" alt="Thời trang nữ">
+                <div class="card-content">
+                    <h4>Áo len cổ tròn thanh lịch - Xu hướng Coolmate đốn tim phái đẹp</h4>
+                    <p>Chất liệu nỉ co giãn mềm mại, giữ form chuẩn phối màu thời thượng. Items không thể thiếu trong tủ đồ của các cô nàng sành điệu.</p>
+                    <a href="danhmuc-nu.html" class="read-more">Khám phá &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LỤA & CHỈ. Thiết kế trang nhã dành cho bài thi Thực Hành Web. | <a href="sitemap.html">Xem Sơ Đồ Trang (Sitemap)</a></p>
+    </footer>
+
+</body>
+</html>
